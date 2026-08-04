@@ -1,0 +1,11 @@
+/* ============================================================
+   Almosafer Hub Design System — global stylesheet entry point.
+   Consumers link THIS file. Keep it as @import lines only.
+   ============================================================ */
+@import './tokens/fonts.css';
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+@import './tokens/spacing.css';
+
+/* Brand logo bitmap classes (paymentLogos etc.) */
+@import './components/brand/fig-assets.css';
