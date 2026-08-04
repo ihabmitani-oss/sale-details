@@ -1,0 +1,141 @@
+/* ============================================================
+   Almosafer Hub — Color tokens
+   Base palette + semantic aliases.
+   The interactive UI is built on the Untitled UI foundation
+   (violet "brand" primary), with Almosafer green/teal/gold as
+   product & marketing accents. Values transcribed from the
+   Hub_Unify Figma library.
+   ============================================================ */
+:root {
+  /* ---- Neutral / Gray (Untitled UI gray) ---- */
+  --gray-25:  #FCFCFD;
+  --gray-50:  #F9FAFB;
+  --gray-100: #F2F4F7;
+  --gray-200: #EAECF0;
+  --gray-300: #D0D5DD;
+  --gray-400: #98A2B3;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --gray-700: #344054;
+  --gray-800: #1D2939;
+  --gray-900: #101828;
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* ---- Primary / Brand (violet — the interactive primary) ---- */
+  --primary-25:  #FAFAFF;
+  --primary-50:  #F9F5FF;
+  --primary-100: #F4EBFF;
+  --primary-200: #E9D7FE;
+  --primary-300: #D6BBFB;
+  --primary-400: #B692F6;
+  --primary-500: #9E77ED;
+  --primary-600: #7F56D9;  /* primary button fill */
+  --primary-700: #6941C6;  /* primary badge / on-light text */
+  --primary-800: #53389E;
+  --primary-900: #42307D;
+
+  /* ---- Almosafer green (product / nav / brand accent) ---- */
+  --green-deep:  #15473E;  /* deepest brand green — featured cards */
+  --green-600:   #467A5C;
+  --green-500:   #73947A;  /* most-used brand green */
+  --green-300:   #AAC6AC;  /* light brand green */
+  --green-100:   #E1FCEF;  /* success surface tint */
+  --green-cover: #ABE49D;  /* cover / hero light green */
+
+  /* ---- Teal / Deep ink (headers, dark surfaces) ---- */
+  --teal-cyan: #0C9AB0;  /* Almosafer travel-brand cyan — pill buttons, date picker */
+  --teal-900: #002F43;
+  --teal-800: #003143;
+  --teal-700: #002957;
+
+  /* ---- Almosafer travel / mobile palette (Open Sans surfaces) ---- */
+  --alm-ink:      #1C1C1C;  /* travel primary text (rgb 28,28,28) */
+  --alm-text:     #333333;  /* travel label text (rgb 51,51,51) */
+  --alm-muted:    #66797F;  /* travel secondary / placeholder (rgb 102,121,127) */
+  --alm-border:   #D8DCDE;  /* travel hairline border (rgb 216,220,222) */
+  --alm-selected: #EDF1F3;  /* selected / pressed row wash (rgb 237,241,243) */
+  --alm-tint:     #E9F6F8;  /* teal-cyan surface tint (rgb 233,246,248) */
+
+  /* ---- Gold / Sand (loyalty, premium accents) ---- */
+  --gold-500: #A18F63;
+
+  /* ---- Coral (Almosafer warm accent) ---- */
+  --coral-500: #E04E39;
+
+  /* ---- Error / Destructive (Untitled UI red) ---- */
+  --error-25:  #FFFBFA;
+  --error-50:  #FEF3F2;
+  --error-100: #FEE4E2;
+  --error-300: #FDA29B;
+  --error-400: #F97066;
+  --error-500: #F04438;
+  --error-600: #D92D20;  /* destructive button fill */
+  --error-700: #B42318;
+
+  /* ---- Warning (amber) ---- */
+  --warning-50:  #FFFAEB;
+  --warning-300: #FEC84B;
+  --warning-500: #F79009;
+  --warning-700: #B54708;
+
+  /* ---- Success (green) ---- */
+  --success-50:  #ECFDF3;
+  --success-100: #DCFAE6;
+  --success-500: #12B76A;
+  --success-600: #039855;
+  --success-700: #027A48;
+
+  /* ============================================================
+     Semantic aliases — prefer these in components
+     ============================================================ */
+  /* Text */
+  --text-primary:        var(--gray-900);
+  --text-secondary:      var(--gray-700);
+  --text-tertiary:       var(--gray-500);
+  --text-placeholder:    var(--gray-400);
+  --text-disabled:       var(--gray-400);
+  --text-white:          var(--white);
+  --text-brand:          var(--primary-700);
+  --text-brand-strong:   var(--primary-600);
+  --text-error:          var(--error-600);
+  --text-success:        var(--success-700);
+
+  /* Surfaces */
+  --surface-page:        var(--gray-50);
+  --surface-card:        var(--white);
+  --surface-subtle:      var(--gray-50);
+  --surface-hover:       var(--gray-100);
+  --surface-brand:       var(--primary-600);
+  --surface-brand-tint:  var(--primary-50);
+  --surface-green-deep:  var(--green-deep);
+  --surface-dark:        var(--teal-900);
+
+  /* Borders */
+  --border-primary:      var(--gray-300);
+  --border-secondary:    var(--gray-200);
+  --border-brand:        var(--primary-600);
+  --border-error:        var(--error-300);
+
+  /* Interactive / buttons */
+  --button-primary-bg:         var(--primary-600);
+  --button-primary-bg-hover:   var(--primary-700);
+  --button-primary-fg:         var(--white);
+  --button-primary-disabled:   var(--primary-200);
+  --button-secondary-border:   var(--gray-300);
+  --button-secondary-fg:       var(--gray-700);
+  --button-destructive-bg:     var(--error-600);
+  --button-destructive-bg-hover: var(--error-700);
+
+  /* Focus ring */
+  --focus-ring-brand: #F4EBFF;
+  --focus-ring-gray:  #F2F4F7;
+  --focus-ring-error: #FEE4E2;
+  --focus-ring-teal:  rgba(12,154,176,.20);  /* travel-brand cyan focus halo */
+}
+
+/* Skeleton shimmer — used by feedback/Skeleton */
+@keyframes alm-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
