@@ -1,0 +1,45 @@
+/* ============================================================
+   Almosafer Hub — Typography tokens
+   Font families: Inter (UI/product), Open Sans (badges, dense
+   labels), transcribed from the Hub_Unify Figma library.
+   ============================================================ */
+:root {
+  /* Families */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-alt: "Open Sans", "Inter", system-ui, sans-serif;
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ---- Display scale (Inter, tight tracking) ---- */
+  --display-2xl-size: 72px;  --display-2xl-line: 90px;  --display-2xl-tracking: -0.02em;
+  --display-xl-size:  60px;  --display-xl-line:  72px;  --display-xl-tracking: -0.02em;
+  --display-lg-size:  48px;  --display-lg-line:  60px;  --display-lg-tracking: -0.02em;
+  --display-md-size:  36px;  --display-md-line:  44px;  --display-md-tracking: -0.02em;
+  --display-sm-size:  30px;  --display-sm-line:  38px;
+  --display-xs-size:  24px;  --display-xs-line:  32px;
+
+  /* ---- Text scale (body) ---- */
+  --text-xl-size: 20px;  --text-xl-line: 30px;
+  --text-lg-size: 18px;  --text-lg-line: 28px;
+  --text-md-size: 16px;  --text-md-line: 24px;
+  --text-sm-size: 14px;  --text-sm-line: 20px;
+  --text-xs-size: 12px;  --text-xs-line: 18px;
+
+  /* Cover hero (from Figma cover frame) */
+  --cover-size: 120px; --cover-line: 1.15 /* @kind other */; --cover-tracking: -0.01em;
+}
+
+/* ---- Type specimen helper classes (optional, used in cards) ---- */
+.alm-display-xl { font-family: var(--font-display); font-weight: var(--weight-bold); font-size: var(--display-xl-size); line-height: var(--display-xl-line); letter-spacing: var(--display-xl-tracking); color: var(--text-primary); }
+.alm-display-md { font-family: var(--font-display); font-weight: var(--weight-semibold); font-size: var(--display-md-size); line-height: var(--display-md-line); letter-spacing: var(--display-md-tracking); color: var(--text-primary); }
+.alm-display-xs { font-family: var(--font-display); font-weight: var(--weight-semibold); font-size: var(--display-xs-size); line-height: var(--display-xs-line); color: var(--text-primary); }
+.alm-text-lg   { font-family: var(--font-sans); font-weight: var(--weight-regular); font-size: var(--text-lg-size); line-height: var(--text-lg-line); color: var(--text-secondary); }
+.alm-text-md   { font-family: var(--font-sans); font-weight: var(--weight-regular); font-size: var(--text-md-size); line-height: var(--text-md-line); color: var(--text-secondary); }
+.alm-text-sm   { font-family: var(--font-sans); font-weight: var(--weight-regular); font-size: var(--text-sm-size); line-height: var(--text-sm-line); color: var(--text-tertiary); }
+.alm-text-sm-medium { font-family: var(--font-sans); font-weight: var(--weight-medium); font-size: var(--text-sm-size); line-height: var(--text-sm-line); color: var(--text-secondary); }
+.alm-label     { font-family: var(--font-alt); font-weight: var(--weight-semibold); font-size: var(--text-xs-size); line-height: var(--text-xs-line); }
